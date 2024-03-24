@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 1: Will you be mine?</title>
+    <style>
+        /* CSS for centering elements, background image, and aligned headings */
+        body {
+            background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20190223/ourmid/pngtree-red-love-balloon-thanksgiving-background-material-backgroundthanksgivingthanksgiving-boardadvertising-backgroundthanksgiving-image_70510.jpg');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .container {
+            background-color: rgba(231, 203, 203, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .gif-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .gif {
+            margin: 10px;
+        }
+        #movingButton {
+            position: relative;
+            transition: transform 0.3s ease-in-out; /* Transition for smooth movement */
+          }
+        
+          #movingButton:hover {
+            transform: translateX(500px); /* Move the button to the right on hover */
+          }
+    </style>
+    <script>
+        function goToAnotherPage() {
+            // Replace 'destination.html' with the URL of the page you want to navigate to
+            window.location.href = 'page2.html';
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2 style="color:rgb(78, 78, 227)">Hey babe, here is a surprise for you</h2>
+        <h3 style="color:black"> Will you be mine?</h3>
+        <div class="gif-container">
+            <img src="https://media.tenor.com/1XWIsUaFv0QAAAAM/always-be-mine-hugs-gif.gif" alt="Will you be mine?" class="gif">
+        </div>
+        <form action="page2.html">
+        
+            <button onclick="goToAnotherPage()">Yes</button>
+            <button id="movingButton">No</button>
+            <br><br>
+            
+        </form>
+        <audio controls autoplay loop>
+            <source src="./Surprise/Resources/Faasle.mpeg" type="audio/mpeg">
+        </audio>
+    </div>
+
+    
+</body>
+</html>
+

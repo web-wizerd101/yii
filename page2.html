@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>: Will you marry me?</title>
+    <style>
+        /* CSS for centering elements, background image, and aligned headings */
+        body {
+            background-image: url('https://img.freepik.com/free-vector/gradient-valentine-s-day-background_23-2149242406.jpg?w=900&t=st=1711132912~exp=1711133512~hmac=59154f12807c12db63ecfd286acd2f91ff59d29f696b33f553e69dcdc3dccd1e');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .container {
+            background-color: rgba(244, 171, 189, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .gif-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .gif {
+            margin: 10px;
+        }
+        #movingButton {
+            position: relative;
+            transition: transform 0.3s ease-in-out; /* Transition for smooth movement */
+          }
+        
+          #movingButton:hover {
+            transform: translateX(500px); /* Move the button to the right on hover */
+          }
+    </style>
+    <script>
+        function goToAnotherPage() {
+            // Replace 'destination.html' with the URL of the page you want to navigate to
+            window.location.href = 'page3.html';
+        }
+    </script>
+</head>
+<body>
+
+    
+    <div class="container">
+        <div class="gif-container">
+            <img src="https://media.tenor.com/0JQb65cpRQsAAAAj/love-wedding.gif" alt="Will you marry me?" class="gif">
+        </div>
+        <button onclick="goToAnotherPage()">Yes</button>
+            <button id="movingButton">No</button>
+            <br><br>
+        <audio  controls autoplay loop>
+            <source src="./Surprise/Resources/Raabta.mpeg" type="audio/mpeg">
+        </audio>
+    </div>
+</body>
+</html>
+
